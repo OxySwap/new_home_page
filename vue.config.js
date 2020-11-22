@@ -1,12 +1,17 @@
 module.exports = {
   "publicPath": "/",
   pwa: {
+    name: 'OxySwap Website',
     iconPaths: {
       favicon32: 'favicon.ico',
       favicon16: 'favicon.ico',
       appleTouchIcon: 'favicon.ico',
       maskIcon: 'favicon.ico',
       msTileImage: 'favicon.ico'
+    },
+    manifestOptions: {
+      short_name: 'OxySwap',
+      icons: [],
     }
   },
   "configureWebpack": {
