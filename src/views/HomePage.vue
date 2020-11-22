@@ -23,12 +23,12 @@
 
     <v-row class="text-center">
       <v-spacer />
-      <v-col class="mb-4" cols='8'>
+      <v-col class="mb-4" cols="8">
         <p class="subheading font-weight-regular">
-          {{ $t('homepage.intro1') }}
+          {{ $t("homepage.intro1") }}
         </p>
         <p class="subheading font-weight-regular">
-          {{ $t('homepage.intro2') }}
+          {{ $t("homepage.intro2") }}
         </p>
       </v-col>
       <v-spacer />
@@ -37,12 +37,11 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue'
+import Vue from "vue";
 
-  export default Vue.extend({
-    name: 'HomePage',
+export default Vue.extend({
+  name: "HomePage",
 
-    data: () => ({
-    }),
-  })
+  data: () => ({}),
+});
 </script>
