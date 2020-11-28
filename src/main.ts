@@ -4,8 +4,12 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
+import VueIpfs from './plugins/vue-ipfs'
 
 import VueI18n from 'vue-i18n'
+
+// Load our IPFS plugin.
+// Vue.use(VueIpfs)
 
 Vue.use(VueI18n)
 

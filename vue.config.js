@@ -14,15 +14,22 @@ module.exports = {
       icons: [],
     }
   },
-  "configureWebpack": {
-    "devServer": {
-      "headers": {
+  configureWebpack: {
+    devServer: {
+      headers: {
         "Access-Control-Allow-Origin": "*"
       },
-      "sockHost": "http://127.0.0.1:8080",
-      "disableHostCheck": true,
-      "host": "127.0.0.1",
-      "port": 8080
+      sockHost: "http://127.0.0.1:8080",
+      disableHostCheck: true,
+      host: "127.0.0.1",
+      port: 8080,
+      proxy: {
+        '/ipfs': {
+          target: 'https://gateway.pinata.cloud/ipfs',
+          ws: true,
+          changeOrigin: true
+        },
+      }
     }
   },
   "transpileDependencies": [
